@@ -1,0 +1,17 @@
+.container {
+  border: solid 1px #000000;
+  margin: 10px;
+  background-color: #e2dbdb;
+  display: inline-block;
+}
+
+.title {
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+}
+.button {
+  display: flex;
+  margin: 5px;
+  justify-content: center;
+}
