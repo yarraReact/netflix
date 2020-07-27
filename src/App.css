@@ -2,4 +2,12 @@
   font-style: italic;
   font-size: 20px;
   margin-left: 10px;
+  color: #ffffff;
+}
+.image{
+      width: 300px;
+      height: 115px;
+}
+.app-container{
+  background-color:#000000;
 }

@@ -3,6 +3,7 @@
   margin: 10px;
   background-color: #e2dbdb;
   display: inline-block;
+  height: 230px;;
 }
 
 .title {
@@ -11,7 +12,8 @@
   margin: 10px;
 }
 .button {
-  display: flex;
-  margin: 5px;
-  justify-content: center;
+  margin-left: 15px;
+}
+.hide-button{
+  visibility: hidden;;
 }

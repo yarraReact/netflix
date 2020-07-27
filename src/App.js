@@ -3,16 +3,16 @@ import { Provider } from "react-redux";
 import { connect } from "react-redux";
 import store from "./store";
 import "./App.css";
-import MyRecommendations from "./MyRecommendations";
-import MyList from "./MyList";
+import logo from "./netflix-logo.png";
+import Lists from "./Lists";
 
 function App() {
   return (
     <Provider store={store()}>
-      <React.Fragment>
-        <MyList />
-        <MyRecommendations />
-      </React.Fragment>
+      <div className="app-container">
+        <img src={logo} className="image" />
+        <Lists />
+      </div>
     </Provider>
   );
 }

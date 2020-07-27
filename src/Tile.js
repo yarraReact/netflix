@@ -3,21 +3,21 @@ import "./Tile.css";
 
 const Tile = ({ info, buttonText ,onClick}) => {
   const [show, setShow] = useState(false);
-  const handleMouse = () => setShow(!show);
+  const handleMouseEnter = () => setShow(true);
+  const handleMouseExit=()=> setShow(false)
   const { id, title, img } = info;
   return (
     <div
       className="container"
-      onMouseEnter={handleMouse}
-      onMouseLeave={handleMouse}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseExit}
     >
       <div className="title">{title}</div>
       <img src={img} height="150px" />
-      {show && (
-        <div className="button">
+        <div className={show ? "button" : "hide-button"}>
           <button onClick={() => onClick(info)}>{buttonText}</button>
         </div>
-      )}
+      
     </div>
   );
 };
